@@ -1,0 +1,463 @@
+
+/*Main page*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family:fantasy;
+  box-sizing: border-box;
+
+  }
+
+#iframe{
+  position:relative ;
+  border: 1px solid black;
+  
+  background-color:inherit;
+  background-color:  #01BEFE;
+  padding:2%;
+  height: 100vh;
+  width: 100vw;
+
+}
+  /* Change menu color on hover */
+  .menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the homepage body */
+  body{
+  width: 60%;
+  float:left;
+  width:100%;
+  /* margin-top: 2%; */
+  }
+
+  .left {
+    float:left;
+    width:50%;
+    padding:20px 20px;
+    margin-top:30px;
+    margin-left: 0px;
+
+  }
+
+  .right {
+
+    background-color:#e5e5e5;
+    float:left;
+    width:50%;
+    padding:20px 20px;
+    margin-top:50px;
+    text-align:center;
+  }
+
+
+.imageHome{
+  background:url(images/mobile_view.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100%;
+  width:100%;
+  float:right;
+  position: sticky;
+  display: block;
+
+}
+
+.imageHome img{
+position:sticky;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+h2{
+padding: 0px;align-items: left;
+color: #000000
+
+}
+
+h1 { display: block;
+  font-size:30px ;
+  text-align: center;
+  color: #000000;
+  style=float:center;
+}
+
+  #container{
+
+
+    display: block;
+
+    resize: both;
+
+
+  }
+
+
+  #content1 {
+
+      display:block;
+      height: 100%;
+      position: sticky;
+      padding-top: 20px;
+      padding-bottom:30px;
+      padding-left: 0px;
+      padding-right: 0px;
+
+    }
+
+
+  /* Make Header Sticky */
+  #header_container {
+
+
+      background:#FFDD00;
+
+      border:1px solid #666;
+
+      height:70px;
+
+      left:0;
+
+      position:fixed;
+
+      width:100%;
+
+      top:0;
+
+
+      z-index: 100;
+  }
+
+  #header {
+
+      line-height:70px;
+
+      margin:0 auto;
+
+      /* width:940px; */
+      width: inherit;
+
+      /* font-size: 25px; */
+      margin-left : 10%;
+
+    }
+
+    #header a {
+      float: left;
+      padding: 2 px;
+      color:  #01BEFE;
+      text-decoration: none;
+      font-size: 30px;
+      width: 13%; /* Four links of equal widths */
+      text-align: center;
+    }
+
+    #header a:hover {
+      background-color: #000;
+    }
+
+    #header a.active {
+      background-color: #FF006D;
+    }
+
+
+    .logo{
+      background:url(images/TTLogo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+      height:90%;
+      width:9%;
+      position:absolute;
+      left:25px;
+      bottom: 5px;
+      top:5px;
+    }
+
+    .logo img{
+    position:sticky;
+    float: left;
+
+    }
+
+    #parentloginButton{
+
+        background-color: #FF006D;
+        margin-left :3%;
+        cursor: pointer;
+        padding: 0.5rem 0.5rem;
+        color: white;
+        font-size: 1.5rem;
+        font-family: inherit;
+        border-radius: 0.4rem;
+        margin-right: 0rem;
+        &:hover,
+        &:focus {
+          background-color: darken(#FF006D, 20%);
+
+        }
+      }
+
+
+          #loginButton1{
+
+              background-color: #FF006D;
+              margin-left :3%;
+              cursor: pointer;
+              padding: 0.5rem 0.5rem;
+              color: white;
+              font-size: 1.5rem;
+              font-family: inherit;
+              border-radius: 0.4rem;
+              margin-right: 1rem;
+              &:hover,
+              &:focus {
+                background-color: darken(#FF006D, 20%);
+
+              }
+            }
+
+            #parentloginButton{
+
+                background-color: #FF006D;
+                margin-left : 1%;
+                border: none;
+                cursor: pointer;
+                padding: 0.5rem 0.5rem;
+                color: white;
+                font-size: 1.5rem;
+                font-family: inherit;
+                border-radius: 0.4rem;
+                margin-right: 0rem;
+                &:hover,
+                &:focus {
+                  background-color: darken(#FF006D, 20%);
+                }
+              }
+
+            .createAccount{
+
+                  background-color: #FF006D;
+                  margin-left : 2%;
+                  border: none;
+                  cursor: pointer;
+                  padding: 0.5rem 0.5rem;
+                  color: white;
+                  font-size: 1.5rem;
+                  font-family: inherit;
+                  border-radius: 0.4rem;
+                  margin-right: 1rem;
+                  &:hover,
+                  &:focus {
+                    background-color: darken(#FF006D, 20%);
+                  }
+                }
+
+      #cancelButton1{
+
+          background-color: #FF006D;
+          margin-left : 2%;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 0.5rem;
+          color: white;
+          font-size: 1.5rem;
+          font-family: inherit;
+          border-radius: 0.4rem;
+          margin-right: 1rem;
+          &:hover,
+          &:focus {
+            background-color: darken(#FF006D, 20%);
+          }
+        }
+
+      #registerButton{
+
+          background-color: #8F00FF;
+          margin-left : 1%;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 0.5rem;
+          color: white;
+          font-size: 1.5rem;
+          font-family: inherit;
+          border-radius: 0.4rem;
+          margin-right: 0rem;
+          &:hover,
+          &:focus {
+            background-color: darken(#FF006D, 20%);
+          }
+        }
+
+      #logoutBtn{
+
+          background-color: #FF006D;
+          margin-left : 9%;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 1.5rem;
+          color: white;
+          font-size: 1.5rem;
+          font-family: inherit;
+          border-radius: 0.4rem;
+          margin-right: 1rem;
+          &:hover,
+          &:focus {
+            background-color: darken(#FF006D, 20%);
+          }
+        }
+
+
+
+
+
+  #footer_container {
+
+          background:#FF7D00;
+
+          border:1px solid #666;
+
+          bottom:0;
+
+          height:60px;
+
+          left:0;
+
+          position:fixed;
+
+          width:100%;
+
+          justify-content: center;
+
+          align-items: center;
+          color: #000;
+          display: flex;
+      }
+
+
+
+
+  #footer {
+          line-height:500px;
+          font-family: fantasy;
+          margin:0 auto;
+          width:940px;
+          color: #000;
+          text-transform: uppercase;
+          font-size: 80px;
+          padding: 10px;
+          text-align:center;
+
+      }
+
+
+      }
+      /* animate footer text */
+  h6:before
+        {
+            font-size: 40px;
+                    position:relative;
+            content: "";
+            animation: animate 3s linear infinite;
+        }
+
+        @keyframes animate
+        {
+          0%
+          {
+            content:"wow";
+          }
+            10%
+            {
+              content:"hello";
+            }
+            40%
+            {
+              content:"terrific";
+            }
+            100%
+            {
+              content:"terrific";
+            }
+
+        }
+/* Instruction blinking */
+.blinking {
+      animation-name:animateBlink;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      opacity: 1;
+    }
+
+    @keyframes animateBlink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .select-editable {
+    position:relative;
+    background-color:white;
+    border:solid grey 1px;
+    width:120px;
+    height:18px;
+}
+.select-editable select {
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:14px;
+    border:none;
+    width:120px;
+    margin:0;
+}
+.select-editable input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100px;
+    padding:1px;
+    font-size:12px;
+    border:none;
+}
+
+    .select-editable select:focus, .select-editable input:focus {
+        outline:none;
+    }
+
+
+  .linksBox{
+    width: 98%;
+    float: left;
+  }
+  .story_section{
+    float: center;
+
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background: #bdf34e;
+    border-radius: 5px;
+    border: 1px solid #4e8dad;
+    width: 100%;
+  }
+
+.story_thumb{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+}
+.story_text{}
