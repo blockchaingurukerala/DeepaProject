@@ -23,6 +23,7 @@ if ($conn==true){
 
 // Query if email exists in db
 $sql = "select username, password from TTLogin where username='$formUsername' and password='$formPassword'";
+
 //echo $sql;
 $result = mysqli_query($conn, $sql);
 $rowCount = mysqli_num_rows($result);

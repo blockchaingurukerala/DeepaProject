@@ -13,9 +13,6 @@ function editActivities(){
 // target=editTask.php;
 target=editTaskModal.php;
 }
-
-
-
 function loginJS()
 {
   //alert ('ssss');
@@ -57,8 +54,6 @@ function validateData()
   else
   {
     alert('passwords mismatch');
-
-
   }
 }
 function submitLogin(){

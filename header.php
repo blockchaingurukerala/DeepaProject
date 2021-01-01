@@ -15,26 +15,32 @@ session_start();
         $loggedin="";
         // Start the session
         
-        if(isset($_SESSION['userName']))
+        if(!isset($_SESSION['userName']))
         {   
           //echo '<script>alert("success")</script>';
-           $loggedin="true";
+           $loggedin="false";
           
         }
         else{
          // header("Location: index.php");
          //echo '<script>alert("Not logged in")</script>';
-          $loggedin="false";
+          $loggedin="true";
         }
         $visiblelogout="";
         $visiblelogin="";
+        $dislogin="";
+        $dislogout=""  ; 
         if($loggedin=="true"){
           $visiblelogout="visible"; 
-          $visiblelogin="invisible";       
+          $visiblelogin="invisible"; 
+          $dislogin="none";
+          $dislogout="initial"   ;   
         }
         else{
           $visiblelogout="invisible"; 
           $visiblelogin="visible";  
+          $dislogin="initial";
+          $dislogout="none"  ;   
         }
         
         ?>
@@ -61,20 +67,24 @@ session_start();
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo $deepa4 ?>" > Instructions</a>
               </li>
+              <form class="form-inline my-2 my-lg-0" action="search.php" method="POST">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
             </ul>
             <ul class="navbar-nav ">
             
-            <li class="nav-item"><button class="btn btn-primary <?php echo $visiblelogin ?>" onclick="document.getElementById('form1').style.display='block'">Register</button>
+            <li class="nav-item"><button class="btn btn-primary " style="display:<?php echo $dislogin ?>" onclick="document.getElementById('form1').style.display='block'">Register</button>
               <?php
               {include 'signup.php';}
               ?>
             </li>
-            <li class="nav-item "><button class="btn btn-primary <?php echo $visiblelogin ?>" onclick="document.getElementById('id01').style.display='block'">Parent Login</button>
+            <li class="nav-item "><button class="btn btn-primary" style="display:<?php echo $dislogin ?>"  onclick="document.getElementById('id01').style.display='block'">Parent Login</button>
               <?php
               {include 'login.php';}
               ?>
             </li>
-            <li class="nav-item"><button class="btn btn-danger <?php echo $visiblelogout ?>" onclick="logOut()">LogOut</button>
+            <li class="nav-item"><button class="btn btn-danger " style="display:<?php echo $dislogout ?>"  onclick="document.location.href='logout.php'">LogOut</button>
              
             </li>
             </ul>
@@ -84,13 +94,5 @@ session_start();
           </div>
         </nav>
 </div>
-<script>
-        function logOut(){
-          
-          <?php session_unset(); ?>
-            <?php session_destroy(); ?>
-            location.href ="index.php";
-      }
-</script>
-    
+
 </html>
