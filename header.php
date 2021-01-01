@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"> 
 <link rel="stylesheet" href="style.css">
       <?php
         $deepa0 = "index.php";
@@ -67,10 +68,10 @@ session_start();
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo $deepa4 ?>" > Instructions</a>
               </li>
-              <form class="form-inline my-2 my-lg-0" action="search.php" method="POST">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+              <form class="form-inline my-2 my-lg-0" action="search.php" method="get">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="uname">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+              </form>               
             </ul>
             <ul class="navbar-nav ">
             
