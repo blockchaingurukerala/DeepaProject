@@ -14,7 +14,7 @@
 	$fpsw = $_REQUEST['psw'];
 	$fcpsw = $_REQUEST['cpsw'];
 
-	//$fpsw=md5($fpsw);
+	
 		if ($_POST['psw' != 'cpsw'])
 	 {
 		echo

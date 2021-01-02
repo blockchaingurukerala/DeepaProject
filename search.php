@@ -1,6 +1,7 @@
 <?php
 // $aa=$_POST["search"] ;
 include("header.php");
+//
 echo "<h2>Search Result " .$_GET["uname"] . "</h2>" ;
 $formUsername=$_GET["uname"];
 

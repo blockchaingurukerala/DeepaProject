@@ -47,7 +47,9 @@ session_start();
         ?>
 <div class="" style="top:0;margin:0 auto;">
         <nav class="navbar navbar-expand-lg navbar-light " style="background:#FFDD00;">
+        <img src="images\2.png" alt="" width="30" height="24" class="d-inline-block align-top img-fluid">
           <a class="navbar-brand" href="#">MY PROJECT NAME</a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
